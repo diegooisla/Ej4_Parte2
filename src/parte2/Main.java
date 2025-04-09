@@ -1,17 +1,19 @@
 package parte2;
 
+import java.util.function.*;
+
 public class Main {
 
 	public static void main(String[] args) {
+		/*
+		 * Modificado usando lambda para ""escribir menos""
+		 */
+		BiFunction<Integer, Integer, Integer> suma2 = (x,y) -> x+y;
 		
-		int a = 5, b = 5;
-		
-		int suma;
-		suma = a + b;
-		
-		System.out.println("Suma");
+		System.out.println(suma2.apply(5, 5));
 		
 		System.out.println("Creando repo local como administrador");
+
 
 	}
 
